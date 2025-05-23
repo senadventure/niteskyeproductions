@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music - NiteSkye Productions</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .video-list li {
+      width: 200px;
+    }
+    .video-list img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .video-list p {
+      margin: 8px 0 0;
+      font-weight: bold;
+      color: #5a2a9d; /* Purple-ish text */
+    }
+    .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NiteSkye Productions</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html" class="active">Music</a></li>
+        <li><a href="gaming.html">Gaming</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Featured Music Video</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/I6E0x_fcKqg"
+          title="Featured NiteSkye Music Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h2>Recent Music Videos</h2>
+      <ul class="video-list">
+        <!-- Example video item -->
+        <li>
+          <a href="https://youtu.be/I6E0x_fcKqg" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.youtube.com/vi/I6E0x_fcKqg/hqdefault.jpg" alt="Featured Video" />
+            <p>Dusk Till Dawn</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/Jo6pGy8dsok" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.youtube.com/vi/Jo6pGy8dsok/hqdefault.jpg" alt="Take Me Back to Eden" />
+            <p>Take Me Back to Eden</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/SnpElNcy4ts" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.youtube.com/vi/SnpElNcy4ts/hqdefault.jpg" alt="Discord Ping 1 and 2" />
+            <p>Ping 1 + 2</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/eIBIeagx0n8" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.youtube.com/vi/eIBIeagx0n8/hqdefault.jpg" alt="Featured Video" />
+            <p>Featured Video Title</p>
+          </a>
+        </li>
+        
+        <!-- Add more videos below -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NiteSkye Productions. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/gh/motyar/petal.js/petal.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof petal !== 'undefined') {
+        petal.init();
+      }
+    });
+  </script>
+
+</body>
+</html>

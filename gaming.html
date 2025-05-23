@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaming - NiteSkye Productions</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .game-list {
+      list-style: none;
+      padding: 0;
+      margin-left: 0;
+      font-size: 1.1rem;
+    }
+    .game-list li {
+      background: linear-gradient(135deg, #5a2a9d, #3a1c6e);
+      color: white;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(90, 42, 157, 0.5);
+    }
+    .active-games li {
+      background: linear-gradient(135deg, #3a6ed9, #1c3a6e);
+      box-shadow: 0 2px 6px rgba(58, 110, 217, 0.5);
+    }
+    h2 {
+      color: #5a2a9d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NiteSkye Productions</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="gaming.html" class="active">Gaming</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Games I Actively Play</h2>
+      <ul class="game-list active-games">
+        <li>GTA V</li>
+        <li>Minecraft</li>
+        <li>Cyberpunk 2077</li>
+        <li>Assassin's Creed Shadows</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Games I Own</h2>
+      <ul class="game-list owned-games">
+        <li>Red Dead Redemption 2</li>
+        <li>Fallout 4</li>
+        <li>Skyrim</li>
+        <li></li>
+        <!-- Add your owned games here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NiteSkye Productions. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/gh/motyar/petal.js/petal.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof petal !== 'undefined') {
+        petal.init();
+      }
+    });
+  </script>
+
+</body>
+</html>
