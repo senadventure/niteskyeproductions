@@ -3,42 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Me - NiteSkye Productions</title>
+  <title>About | NiteSkye</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="nsp.jpg" type="image/jpeg">
 </head>
 <body>
-  <header>
-    <h1>NiteSkye Productions</h1>
-    <nav>
+
+<header>
+  <h1>NiteSkye Productions</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gaming.html">Gaming</a></li>
+      <li><a href="vrchat.html">VRChat</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="about-container">
+
+  <div class="about-intro">
+    <h2>About Me</h2>
+    <p class="tagline">
+      Community builder. Night owl. Creator of calm, drama-free spaces.
+    </p>
+    <p>
+      I’m <strong>Sen</strong>, known online as 
+      <strong>NiteSkye</strong>, 
+      <strong>NiteSkye Productions</strong>, or 
+      <strong>NiteSkye Official</strong>.
+      <br><br>I’ve been building online communities for years and enjoy creating
+      relaxed environments where people can hang out without pressure.
+    </p>
+  </div>
+
+  <div class="profile-card">
+    <ul class="profile-grid">
+      <li><span>Name</span> Sen</li>
+      <li><span>VR Name</span> ༒NiteSkye༒</li>
+      <li><span>Gender</span> Male</li>
+      <li><span>Timezone</span> Eastern (EST)</li>
+      <li><span>Platforms</span> Xbox Series | PC</li>
+    </ul>
+  </div>
+
+  <div class="split-section">
+    <div class="likes">
+      <h3>Likes</h3>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="gaming.html">Gaming</a></li>
-        <li><a href="about.html" class="active">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>Late-night gaming sessions</li>
+        <li>Music production & visualizers</li>
+        <li>Building Discord bots & servers</li>
+        <li>Anything tech-related</li>
       </ul>
-    </nav>
-  </header>
+    </div>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hello! I'm NiteSkye, a passionate gaming enthusiast and music creator. I love blending vibrant visuals with catchy beats to craft unique experiences.</p>
-      <p>This site is my space to share my work and connect with fellow fans and gamers.</p>
-    </section>
-  </main>
+    <div class="dislikes">
+      <h3>Dislikes</h3>
+      <ul>
+        <li>Drama</li>
+        <li>Immaturity</li>
+        <li>Disrespect</li>
+        <li>Unnecessary negativity</li>
+      </ul>
+    </div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 NiteSkye Productions. All rights reserved.</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/gh/motyar/petal.js/petal.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      if (typeof petal !== 'undefined') {
-        petal.init();
-      }
-    });
-  </script>
-  
+  <div class="experience">
+    <p>
+      I’ve been building Discord communities since early 2017. 
+      <strong>NiteSkye Productions</strong> is my long-term creative project across VRChat and Discord.
+      I stream casually, create visualizer-style music videos in my free time, and run the night on VRChat.
+    </p>
+
+    <p>
+      I’ve been on Steam for 7+ years, VRChat for 5+, and Xbox for as long as I can remember.
+      If you ever want to play something, feel free to reach out.
+    </p>
+  </div>
+
+</section>
+</main>
+
+<footer>
+  <p>© 2026 NiteSkye Productions</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
